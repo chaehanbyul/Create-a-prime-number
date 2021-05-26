@@ -31,3 +31,36 @@ int main()
 
 	return answer;
 }
+
+//Another solution
+
+/*
+1. 
+{
+	for(int i=2;i*i<n;i++)
+	{
+		if(n % i != 0)
+			return FALSE;
+	}
+}
+
+2.
+{
+	int prime[100]; //소수를 저장할 변수
+	int pn = 0; //소수의 개수
+	bool check[100] = { false, }; //지워졌으면 true
+	int n = 100; //100까지의 소수
+
+	for (int i = 2; i <= n; i++) {
+		if (check[i] == false) {
+			prime[pn++] = i;
+			for (int j = i + i; j <= n; j += i) {
+				check[j] = true;
+			}
+		}
+	}
+	for (int i = 0; i < pn; i++) {
+		cout << prime[i] <<" ";
+	}
+}
+*/
