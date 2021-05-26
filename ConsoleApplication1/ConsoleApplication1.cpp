@@ -7,7 +7,7 @@ using namespace std;
 
 int main()
 {
-	int answer = 0;
+	int nAnswer = 0;
 	vector<int> nums = { 1,2,7,6,4 };
 
 	for (int i = 0; i < nums.size(); i++)
@@ -21,7 +21,7 @@ int main()
 				for (int nCheck = 2; nCheck <= sum; nCheck++)
 				{
 					if (sum == nCheck)
-						answer++;
+						nAnswer++;
 					if ((sum % nCheck) == 0)
 						break;
 				}
@@ -29,7 +29,7 @@ int main()
 		}
 	}
 
-	return answer;
+	return nAnswer;
 }
 
 //Another solution
